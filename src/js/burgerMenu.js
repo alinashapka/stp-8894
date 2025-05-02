@@ -1,11 +1,10 @@
-const openBtnEl = document.querySelector('[data-action="open"]');
-const closeBtnEl = document.querySelector('[data-action="close"]');
-const burgerMenuEl = document.querySelector('[data-visible]');
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav');
 
-openBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'open';
-});
-
-closeBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'close';
+  burger.addEventListener('click', () => {
+    const isOpen = burger.dataset.state === 'open';
+    burger.dataset.state = isOpen ? 'closed' : 'open';
+    nav.dataset.menu = isOpen ? 'closed' : 'open';
+  });
 });
