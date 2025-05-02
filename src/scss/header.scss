@@ -11,7 +11,7 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,6 +21,7 @@ body {
 .logo {
   height: 64px;
   width: auto;
+  margin-left: -24px;
 }
 
 /* DESKTOP NAVIGATION */
@@ -76,13 +77,15 @@ body {
 
   .nav {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 60px;
     left: 0;
     right: 0;
     width: 100%;
+    height: calc(100vh - 60px);
     background: #25257a;
     padding: 20px 0;
+    z-index: 9999;
   }
 
   .nav[data-menu='open'] {
