@@ -1,0 +1,106 @@
+/* === mobile-first 320px === */
+.benefits {
+  background-color: #3c3ca6;
+  padding: 40px 20px;
+}
+.benefits__title {
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  color: #ffd700;
+  text-align: center;
+  margin: 0 0 24px;
+  text-shadow: 0 0 8px rgba(255, 213, 0, 0.8);
+}
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.benefit-card {
+  width: 285px;
+  height: 260px;
+  background-color: #423d9b;
+  border: 1px solid #3f3f7a;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.benefit-card__icon {
+  display: block;
+  .benefit-card__icon {
+    width: 102px;
+    height: 78px;
+    margin-bottom: 16px;
+  }
+  margin: 0 auto 12px;
+}
+.benefit-card__title {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #f1f1ff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  align-self: stretch;
+}
+
+.benefit-card__text {
+  margin: 0;
+  font-size: 16px;
+  color: #c8c8f0;
+  line-height: 19px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.benefit-card:nth-child(even) {
+  background-color: #1d1b46;
+}
+
+/* === Десктоп ≥1200px: сетка 3×2 === */
+@media (min-width: 1200px) {
+  .benefits__list {
+    display: grid;
+    /* три колонки одинаковой ширины */
+    grid-template-columns: repeat(3, 330px);
+    /* два ряда автоматически */
+    justify-content: center;
+    gap: 48px; /* отступ между карточками */
+    padding: 0;
+  }
+
+  .benefit-card {
+    /* пусть карточки тянутся на всю колонку */
+    width: 100%;
+    max-width: 330px;
+    height: 350px;
+    text-align: center;
+    padding: 24px 16px;
+  }
+
+  .benefit-card__icon {
+    margin-bottom: 16px;
+  }
+
+  .benefit-card__title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    align-self: stretch;
+  }
+
+  .benefit-card__text {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 16px;
+    align-self: stretch;
+  }
+}
