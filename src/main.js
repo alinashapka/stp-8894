@@ -1,4 +1,4 @@
-// import {} from './js/burgerMenu';
+// import './js/burgerMenu.js';
 
 // document.addEventListener('DOMContentLoaded', () => {
 

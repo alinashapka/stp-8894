@@ -1,30 +1,36 @@
 body {
   margin: 0;
   font-family: 'Bangers', cursive, sans-serif;
-  background-color: #111;
+  padding-top: 64px;
 }
-
 .header {
-  background: linear-gradient(0deg, #202060 0%, #303070 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
-
 .container {
-  max-width: 1280px;
+  max-width: none;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
 }
 
+.header-container {
+  margin: 0 auto;
+  background: linear-gradient(0deg, #202060 0%, #303070 100%);
+  max-width: 1200px;
+}
+
 .logo {
   height: 64px;
   width: auto;
-  margin-left: -24px;
 }
 
-/* DESKTOP NAVIGATION */
 .nav {
   display: block;
 }
@@ -73,21 +79,22 @@ body {
 @media (max-width: 1199px) {
   .burger {
     display: block;
+    position: relative;
+    z-index: 10000;
   }
 
   .nav {
-    display: none;
-    position: fixed;
-    top: 60px;
+    position: fixed; /* фиксируем над всем */
+    top: 64px; /* от самого верха viewport */
     left: 0;
-    right: 0;
-    width: 100%;
-    height: calc(100vh - 60px);
+    width: 100%; /* на всю ширину экрана */
+    height: calc(100vh - 64px); /* на всю высоту экрана */
     background: #25257a;
-    padding: 20px 0;
-    z-index: 9999;
+    padding: 20px 0; /* если нужно отодвинуть содержимое вниз под шапку */
+    z-index: 999;
+    overflow-y: auto; /* если пунктов много — позволяем скролл */
+    display: none;
   }
-
   .nav[data-menu='open'] {
     display: block;
   }
