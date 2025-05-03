@@ -2,11 +2,11 @@
 /* 1) Фон и паддинги самой секции Hero        */
 /* ----------------------------------------- */
 .hero {
-  background-color: #3c3ca6;
   padding: 60px 20px;
   min-width: 320px;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #3c3ca6;
 }
 
 /* ----------------------------------------- */
@@ -52,7 +52,7 @@
   font-size: 24px; /* вместо size:24px */
   line-height: 1.5;
   color: #ffcc00;
-  text-align: center;
+  text-align: start;
 }
 
 /* Кнопка */
