@@ -1,0 +1,45 @@
+a {
+  text-decoration: underline;
+}
+ul {
+  list-style-type: disc;
+}
+.policies-container {
+  padding: 0 20px;
+}
+.policies-title {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 0.94;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: #ffd700;
+}
+.policies-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #d0d0e5;
+}
+.policies-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #d0d0e5;
+}
+.policies-list {
+}
+.policies-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.policies-sublist {
+}
+.policies-subitem {
+}
+.policies-link {
+}

@@ -1,35 +1,111 @@
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+/* ----------------------------------------- */
+/* 1) Фон и паддинги самой секции Hero        */
+/* ----------------------------------------- */
+.hero {
   background-color: #3c3ca6;
-}
-.hero-title {
+  padding: 60px 20px;
+  min-width: 320px;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
-  font-style: normal;
+}
+
+/* ----------------------------------------- */
+/* 2) Внутренний контейнер — сетка 1-колонка */
+/* ----------------------------------------- */
+.hero-container {
+  display: grid;
+  grid-template-areas:
+    'title'
+    'image'
+    'content'
+    'button';
+  row-gap: 20px;
+  justify-items: center; /* центрируем всё в мобильной сетке */
+}
+
+/* Заголовок — занимает всю ширину */
+.hero-title {
+  grid-area: title;
+  margin: 0;
   font-weight: 700;
   font-size: 32px;
-  line-height: 77px;
+  line-height: 1.2;
   color: #ffd700;
-  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
+
+/* Картинка */
+.hero-container > img {
+  grid-area: image;
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Параграф */
+.hero-content {
+  grid-area: content;
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px; /* вместо size:24px */
+  line-height: 1.5;
+  color: #ffcc00;
+  text-align: center;
+}
+
+/* Кнопка */
 .download-btn {
-  display: flex;
+  grid-area: button;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 12px;
+  padding: 12px 24px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
   width: 208px;
   height: 65px;
-  border-radius: 12px;
-  border: none;
-  background-color: #ffd700;
-}
-.hero-content {
+  cursor: pointer;
   font-weight: 400;
-  size: 24px;
-  line-height: 100%;
-  letter-spacing: 0;
-  color: #ffcc00;
+  font-size: 20px;
+  line-height: 24px;
+}
+.download-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ----------------------------------------- */
+/* 3) Десктоп ≥1200px — две колонки и кнопка  */
+/* ----------------------------------------- */
+@media (min-width: 1200px) {
+  .hero-container {
+    grid-template-columns: 480px 1fr;
+    grid-template-areas:
+      'title  title'
+      'image  content'
+      'image  button';
+    column-gap: 40px;
+    justify-items: start; /* по умолчанию слева */
+  }
+
+  .hero-title {
+    font-size: 48px;
+    white-space: nowrap;
+    letter-spacing: -0.03em; /* чуть ближе друг к другу */
+    word-spacing: -0.2em; /* чуть ужимает пробелы */
+    text-align: right;
+    margin-left: 80px;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+  .download-btn {
+    justify-self: start; /* кнопка уходит в левый край второй колонки */
+    margin-top: 20px;
+  }
 }
