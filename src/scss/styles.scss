@@ -33,6 +33,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 html {
   scroll-behavior: smooth;
 }

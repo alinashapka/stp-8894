@@ -1,41 +1,80 @@
 .policies-container {
+  margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 50px;
+  background-color: var(--background-color);
+}
+@include media(desktop) {
+  .policies-container {
+    padding: 0 36px;
+  }
 }
 .policies-title {
   font-family: 'Cinzel', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 0.94;
-  margin: 0 auto;
+  text-align: center;
   margin-bottom: 40px;
   color: #ffd700;
+}
+@include media(desktop) {
+  .policies-title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
 }
 .policies-subtitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 20px;
   color: #d0d0e5;
+}
+.policies-subtitle.obligations {
+  margin-bottom: 20px;
+}
+.span-regular {
+  font-weight: 400;
+}
+.span-bold {
+  font-weight: 600;
 }
 .policies-text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: #d0d0e5;
 }
 .policies-list {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #d0d0e5;
 }
 .policies-list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 .policies-sublist {
   list-style-type: disc;
+  padding-left: 1.5rem;
 }
 .policies-subitem {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #d0d0e5;
 }
 .policies-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #d0d0e5;
   text-decoration: underline;
 }
