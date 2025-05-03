@@ -1,0 +1,65 @@
+.ready-to-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+@include media(desktop) {
+  .ready-to-container {
+    gap: 0;
+    background-image: url('/img/ready-to/ready-to-1@1x.png'),
+      url('/img/ready-to/ready-to-2@1x.png');
+    background-position: bottom left, top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .ready-to-container {
+      background-image: url('/img/ready-to/ready-to-1@2x.png'),
+        url('/img/ready-to/ready-to-2@2x.png');
+    }
+  }
+}
+.ready-to-title {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #ffd700;
+}
+@include media(desktop) {
+  .ready-to-title {
+    font-size: 48px;
+    margin-bottom: 36px;
+  }
+}
+.ready-to-text {
+  font-family: var(--font-family);
+  font-size: 20px;
+  color: #fff;
+}
+@include media(desktop) {
+  .ready-to-text {
+    font-size: 24px;
+    margin-bottom: 54px;
+  }
+}
+.download-btn {
+  border-radius: 4px;
+  padding: 20px 12px;
+  width: 280px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.download-btn-text {
+  font-family: var(--font-family);
+  width: 136px;
+}
+@include media(desktop) {
+  .download-btn {
+    width: 208px;
+  }
+}
