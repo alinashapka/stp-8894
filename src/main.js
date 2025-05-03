@@ -1,5 +1,5 @@
-// import './js/burgerMenu.js';
+import { initBurgerMenu } from './js/burgerMenu.js';
 
-// document.addEventListener('DOMContentLoaded', () => {
-
-// }
+document.addEventListener('DOMContentLoaded', () => {
+  initBurgerMenu();
+});
