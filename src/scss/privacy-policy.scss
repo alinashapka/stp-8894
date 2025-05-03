@@ -3,10 +3,15 @@
   padding: 0 20px;
   padding-bottom: 50px;
   background-color: var(--background-color);
+  text-align: left;
 }
 @include media(desktop) {
   .policies-container {
     padding: 0 36px;
+  }
+  .policies-wrapper {
+    width: 1008px;
+    margin: 0 auto;
   }
 }
 .policies-title {
@@ -31,7 +36,7 @@
   line-height: 1.5;
   color: #d0d0e5;
 }
-.policies-subtitle.obligations {
+.policies-subtitle.margin {
   margin-bottom: 20px;
 }
 .span-regular {
@@ -55,6 +60,8 @@
   font-size: 20px;
   line-height: 1.5;
   color: #d0d0e5;
+  padding-left: 20px;
+  margin-left: 0;
 }
 .policies-list-item:not(:last-child) {
   margin-bottom: 30px;
@@ -63,12 +70,29 @@
   list-style-type: disc;
   padding-left: 1.5rem;
 }
+.policies-sublist-cookies {
+  list-style-type: none;
+}
 .policies-subitem {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   color: #d0d0e5;
+}
+.policies-subitem-cookies:not(:last-child) {
+  margin-bottom: 30px;
+}
+.policies-subitem-manage {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #d0d0e5;
+  text-decoration: underline;
+}
+.policies-subitem-manage:not(:last-child) {
+  margin-bottom: 20px;
 }
 .policies-link {
   font-family: 'Montserrat', sans-serif;
@@ -77,4 +101,21 @@
   line-height: 1.5;
   color: #d0d0e5;
   text-decoration: underline;
+}
+.text-cookies {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #d0d0e5;
+}
+.text-cookies:not(:last-child) {
+  margin-bottom: 20px;
+}
+.text-cookies.bold {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #d0d0e5;
+  font-weight: 600;
 }
