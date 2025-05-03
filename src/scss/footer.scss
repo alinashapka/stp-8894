@@ -1,0 +1,26 @@
+.footer {
+  background: linear-gradient(180deg, #202060 0%, #303070 100%);
+  border: 1px solid #000;
+}
+.footer-nav {
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+.footer-item {
+}
+.footer-link {
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 2;
+  color: #fff;
+}
+.footer-text {
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 2.14;
+  color: #fff;
+}
