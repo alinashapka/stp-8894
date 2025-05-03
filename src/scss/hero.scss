@@ -72,6 +72,13 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  color: black;
+}
+.download-btn:hover {
+  background-color: #ffca00;
+}
+.download-btn:focus {
+  background-color: #e6b800;
 }
 .download-btn img {
   width: 24px;
@@ -105,7 +112,7 @@
     text-align: left;
   }
   .download-btn {
-    justify-self: start; /* кнопка уходит в левый край второй колонки */
+    justify-self: center; /* кнопка уходит в центр второй колонки */
     margin-top: 20px;
   }
 }
