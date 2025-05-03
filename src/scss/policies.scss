@@ -1,3 +1,21 @@
+.policies-header {
+  padding-bottom: 0;
+}
+.policies-header-wrapper {
+  display: flex;
+}
+.go-to-home-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: #d0d0e5;
+}
+.policies-icon {
+  width: 8px;
+  height: 12px;
+  margin-right: 6px;
+}
 .policies-container {
   margin: 0 auto;
   padding: 0 20px;
@@ -119,16 +137,4 @@
   line-height: 1.5;
   color: #d0d0e5;
   font-weight: 600;
-}
-.go-to-home-link {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
-  color: #d0d0e5;
-}
-.policies-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
 }
