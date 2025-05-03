@@ -10,20 +10,17 @@ body {
   width: 100%;
   z-index: 1000;
 }
-.container {
-  max-width: none;
-  margin: 0 auto;
-  padding: 0 20px;
+
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-}
-
-.header-container {
   margin: 0 auto;
   background: linear-gradient(0deg, #202060 0%, #303070 100%);
+  max-width: none;
   max-width: 1200px;
+  padding: 0 20px;
 }
 
 .logo {
