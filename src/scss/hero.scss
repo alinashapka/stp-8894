@@ -25,6 +25,7 @@
 
 /* Заголовок — занимает всю ширину */
 .hero-title {
+  font-family: Baloo 2;
   grid-area: title;
   margin: 0;
   font-weight: 700;
@@ -38,7 +39,8 @@
 /* Картинка */
 .hero-container > img {
   grid-area: image;
-  width: 100%;
+  width: auto; /* снимем ограничение по ширине */
+  height: 100%;
   max-width: 480px;
   display: block;
   border-radius: 16px;
@@ -46,13 +48,16 @@
 
 /* Параграф */
 .hero-content {
+  font-family: Inter;
   grid-area: content;
   margin: 0;
   font-weight: 400;
-  font-size: 24px; /* вместо size:24px */
-  line-height: 1.5;
+  font-size: 24px;
+  line-height: 1.2;
   color: #ffcc00;
   text-align: start;
+  max-width: 520px;
+  white-space: normal;
 }
 
 /* Кнопка */
@@ -95,7 +100,8 @@
       'title  title'
       'image  content'
       'image  button';
-    column-gap: 40px;
+    column-gap: 24px;
+    row-gap: 0;
     justify-items: start; /* по умолчанию слева */
   }
 
@@ -106,13 +112,19 @@
     word-spacing: -0.2em; /* чуть ужимает пробелы */
     text-align: right;
     margin-left: 80px;
+    margin-bottom: 20px;
   }
 
+  .hero-container > img {
+    grid-area: image;
+    margin-bottom: 20px;
+  }
   .hero-content {
     text-align: left;
+    margin-bottom: 0;
   }
   .download-btn {
     justify-self: center; /* кнопка уходит в центр второй колонки */
-    margin-top: 20px;
+    margin-top: -65px;
   }
 }

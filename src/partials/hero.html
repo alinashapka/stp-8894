@@ -1,25 +1,35 @@
 <section class="hero" id="home">
   <div class="container hero-container">
     <h2 class="hero-title">Tower Hero – Tower Defense Like Never Before</h2>
-    <img src="../img/hero/hero-mob@1x.png" alt="hero" />
+    <picture>
+      <source
+        srcset="img/hero/hero-mob@1x.png, img/hero/hero-mob@2x.png"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="img/hero/hero@1x.png, img/hero/hero@2x.png"
+        media="(min-width: 1200px)"
+      />
+      <img src="../img/hero/hero-mob@1x.png" alt="hero" />
+    </picture>
+
     <p class="hero-content">
       Step into an epic world where strategy meets fantasy in the ultimate tower
       defense experience. Tower Hero – Tower Defense challenges you to hold the
       line against waves of enemies using a mighty arsenal of towers, spells,
-      and legendary heroes. Lead your army, fortify your defenses, and outwit
-      the forces of evil threatening your kingdom. Victory demands courage,
-      planning, and unbreakable resolve.
+      and legendary heroes. <br />
+      <br />
+      Lead your army, fortify your defenses, and outwit the forces of evil
+      threatening your kingdom. Victory demands courage, planning, and
+      unbreakable resolve.
     </p>
     <a
       href="https://play.google.com/store/apps/details?id=com.blockstack.tophero&hl=en&gl=us"
       class="download-btn"
       target="_blank"
       rel="noopener"
-    >
-      <!-- <button class="download-btn"> -->
-      <img src="../img/googlePlay.png" alt="icon-google-play" />
-      Download on Google Play
-      <!-- </button> -->
+      ><img src="/img/googlePlay.png" alt="icon-google-play" />
+      <span class="download-btn-text">Download on Google Play</span>
     </a>
   </div>
 </section>
