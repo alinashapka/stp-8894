@@ -48,7 +48,7 @@
     <title>Tower Hero – Defend, Conquer, Rise</title>
     
     <script type="module" crossorigin src="/stp-8894/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8894/assets/styles-a65ae70a.css">
+    <link rel="stylesheet" href="/stp-8894/assets/styles-ed88ca54.css">
   </head>
   <body>
     <header class="header">
@@ -84,25 +84,35 @@
       <section class="hero" id="home">
   <div class="container hero-container">
     <h2 class="hero-title">Tower Hero – Tower Defense Like Never Before</h2>
-    <img src="../img/hero/hero-mob@1x.png" alt="hero" />
+    <picture>
+      <source
+        srcset="/stp-8894/assets/hero-mob@1x-2a5d19bd.png , /stp-8894/assets/hero-mob@2x-4f8ce568.png "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="/stp-8894/assets/hero@1x-75d9b936.png , /stp-8894/assets/hero@2x-9b3426f9.png "
+        media="(min-width: 1200px)"
+      />
+      <img src="/stp-8894/assets/hero-mob@1x-2a5d19bd.png" alt="hero" />
+    </picture>
+
     <p class="hero-content">
       Step into an epic world where strategy meets fantasy in the ultimate tower
       defense experience. Tower Hero – Tower Defense challenges you to hold the
       line against waves of enemies using a mighty arsenal of towers, spells,
-      and legendary heroes. Lead your army, fortify your defenses, and outwit
-      the forces of evil threatening your kingdom. Victory demands courage,
-      planning, and unbreakable resolve.
+      and legendary heroes. <br />
+      <br />
+      Lead your army, fortify your defenses, and outwit the forces of evil
+      threatening your kingdom. Victory demands courage, planning, and
+      unbreakable resolve.
     </p>
     <a
       href="https://play.google.com/store/apps/details?id=com.blockstack.tophero&hl=en&gl=us"
       class="download-btn"
       target="_blank"
       rel="noopener"
-    >
-      <!-- <button class="download-btn"> -->
-      <img src="../img/googlePlay.png" alt="icon-google-play" />
-      Download on Google Play
-      <!-- </button> -->
+      ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA2CAYAAABumXGkAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQFSURBVHgB3dpLTBNBGMDxb2bbIvjCxFc8GDiYeKyPeDIKojHRg5UYEzwYPGjixcDRxIRy0psh0aO2xih6QHszKkg9eBEVDiYeTGyjiQYjUh7yKt1xv4XBbWG3u91vaOP/1G4f7I/5JlloAf6D2EoHw7FILa/mrVxA7cIRPfmuJZGECi0PgScfqOEdIFhb4RMFiDToevv7c4kEVFhLCBNQrfXjTacXGJh4TuidQy2JNFRIXN4wV6AIAGPAWgNMS+1/1Hwz3B2pgwrIXInwU2MVZrVR8BiOmBDQ+aHlSRzKmLkSmz/eD4dGI+A1Y1XqOGOxfY+aU/seRry/AVEmQueibs3v01AKBEMM49pTAxMrx4hx6x0/EKxc+4UXHvALWYi1aYz37+1uboVViK90kAJi3S/7uyMNoDBu9wDNiixggGn9KvcLd3qQCoIt7ZfHzR3UGF7sCZQQM8Gi1PulKAJDSNXIOaCKer+4QmBVmeOw5udFoIxqv7hGYKGJg+QQTO6XSz2HOkS/vPx3nycEpgqyKzAGNzYMRLM5bXDuhdbq5bWeERg1BAG3N76B9Sy7eAnDYnO9WmryRbDoVTVWEgKjglgB1hBTxcWggYlNP4M6p/coGYH5hdgBrJn7JRhIZfsCtvvFFwIrFeIGkJcA2/3iG4F5hXgGLGbdL9YRI0FgbiGlAqwhRo4Y3g8AYQjR5nbC1I7rIPjUsscpAHkZIzbzMjhGthIybXYn1Hy/CkyvyTt+suorLUD+PCZukiPMNy6AIODa+kFygEwJApOQk8ERE6AyZQjsSPoTXOn5BWJWA5UpQxz+8Rwuf7oBueFqmHiwSylECUICZKoh5IhCgEwZxPgPJCnCDiAjhxiA4LH5KBmiGEBGATH+//vaADQiAO+TIE5863EFkCFk/M5u0MdC4CkGGcHYhdCx+QYDkJSHfSPOfLkH5z/fAq8hAFfEFcQ4eRydAF9XH2rKxgsf9oVAwJl0HErNFYRBYp4H9uDosMZMZqWnlIzwC5DZQZbmvmn+dHXjTNrpPUpCUAFkEgIzWsZu7p3yjKAGyMRYKDP+pL7Lbu6d8vT3hCqAUXwyt7a9/u5ABu6C51wjlACMuWdcRLf0vkuCj1wh6AEsLQDat716S/KZeNE9QQkwPqrFTdv5J1ezZ1sfDQBzXAniFViY+2QyA8TZIsgARHPv1IoIGgBLM6Zf2NKn7uRly/aEX4B17lX+9q3lrYTvayEBXdP62qiKuXfKROjAh876ASzO/fa+1fnNF2Z+QWW0IVyb1YIp46bHT2kW5763PCcvM/fEpuQQznGX2xeVY+6LnM+/hpsOJBiIU04vKNfcO7XsO4DDRw9EmRAdy56J1/catG19OTAEFdZfi4IJD8v5aFAAAAAASUVORK5CYII=" alt="icon-google-play" />
+      <span class="download-btn-text">Download on Google Play</span>
     </a>
   </div>
 </section>
