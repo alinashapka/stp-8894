@@ -17,12 +17,10 @@ export function AccordionInIt() {
         panel.style.display = 'none';
         questionText.classList.remove('active');
         icon.setAttribute('href', '/img/sprite.svg#icon-plus');
-        button.style.marginTop = '0';
       } else {
         panel.style.display = 'block';
         questionText.classList.add('active');
         icon.setAttribute('href', '/img/sprite.svg#icon-minus');
-        button.style.marginTop = '55.5px';
       }
     });
   });
