@@ -1,0 +1,98 @@
+.cookie-pop-up {
+  padding-top: 40px;
+  background: #1e1e3f;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.cookie-pop-up.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+@include media(desktop) {
+  .cookie-pop-up-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.pop-up-title {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 0.94;
+  text-align: center;
+  color: #ffd700;
+  margin-bottom: 65px;
+}
+.pop-up-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #fff;
+  margin-bottom: 100px;
+}
+@include media(desktop) {
+  .pop-up-text {
+    width: 887px;
+    margin-bottom: 66px;
+  }
+}
+.pop-up-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@include media(desktop) {
+  .pop-up-btns {
+    flex-direction: row;
+  }
+}
+.pop-up-accept {
+  border-radius: 12px;
+  padding: 10px;
+  height: 68px;
+  border: none;
+  background: #ffd700;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  color: #0f0f1c;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop-up-decline {
+  border: 1px solid #ffd700;
+  background: none;
+  border-radius: 12px;
+  padding: 10px;
+  height: 68px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  color: #ffd700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@include media(desktop) {
+  .pop-up-accept,
+  .pop-up-decline {
+    width: 258px;
+  }
+}
