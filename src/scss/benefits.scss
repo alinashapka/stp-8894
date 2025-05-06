@@ -1,11 +1,13 @@
 /* === mobile-first 320px === */
 .benefits {
   background-color: #3c3ca6;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
+
 .benefits__title {
-  font-family: 'Bangers', cursive;
-  font-size: 20px;
+  font-family: Cinzel;
+  font-weight: 700;
+  font-size: 32px;
   color: #ffd700;
   text-align: center;
   margin: 0 0 24px;
@@ -29,16 +31,15 @@
 }
 .benefit-card__icon {
   display: block;
-  .benefit-card__icon {
-    width: 102px;
-    height: 78px;
-    margin-bottom: 16px;
-  }
+  width: 102px;
+  height: 78px;
+  margin-bottom: 16px;
   margin: 0 auto 12px;
 }
 .benefit-card__title {
+  font-family: Inter;
   margin: 0 0 8px;
-  font-size: 1.1rem;
+  font-size: 20px;
   color: #f1f1ff;
   font-style: normal;
   font-weight: 600;
@@ -49,13 +50,15 @@
 }
 
 .benefit-card__text {
+  font-family: Inter;
+  font-weight: 400;
   margin: 0;
+  padding: 0 18px;
   font-size: 16px;
   color: #c8c8f0;
   line-height: 19px;
   text-align: center;
   font-style: normal;
-  font-weight: 400;
   align-self: stretch;
 }
 
@@ -65,6 +68,11 @@
 
 /* === Десктоп ≥1200px: сетка 3×2 === */
 @media (min-width: 1200px) {
+  .benefits {
+    padding: 120px 20px 120px;
+    background: url('/img/benefits/shape.png') no-repeat top center;
+    background-size: 100% auto;
+  }
   .benefits__list {
     display: grid;
     /* три колонки одинаковой ширины */
@@ -79,7 +87,6 @@
     /* пусть карточки тянутся на всю колонку */
     width: 100%;
     max-width: 330px;
-    height: 350px;
     text-align: center;
     padding: 24px 16px;
   }

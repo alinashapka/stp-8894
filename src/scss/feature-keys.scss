@@ -1,0 +1,113 @@
+.feature-keys {
+  justify-content: center;
+  background-color: #3c3ca6;
+  padding: 60px 20px;
+}
+
+.feature-keys-title {
+  font-family: Cinzel;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.5%;
+  color: #ffd700;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.feature-keys-grid {
+  display: grid;
+  row-gap: 35px;
+  column-gap: 0;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'graphic-left'
+    'list-top-right'
+    'graphic-right'
+    'list-bottom-left';
+  justify-items: center;
+}
+
+.feature-keys-graphic img {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.feature-keys-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 420px;
+}
+.feature-keys-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.feature-keys-icon {
+  display: none;
+}
+
+.feature-keys-item-title {
+  font-family: Inter;
+  margin: 0 0 7px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.feature-keys-item-text {
+  font-family: Inter;
+  font-weight: 400;
+  margin: 0;
+  font-size: 16px;
+  color: #ddd;
+  line-height: 100%;
+}
+
+.feature-keys-graphic--left {
+  grid-area: graphic-left;
+}
+.feature-keys-list--top-right {
+  grid-area: list-top-right;
+}
+.feature-keys-list--bottom-left {
+  grid-area: list-bottom-left;
+}
+.feature-keys-graphic--right {
+  grid-area: graphic-right;
+}
+
+@media (min-width: 1200px) {
+  .feature-keys-grid {
+    grid-template-columns: 480px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'graphic-left list-top-right'
+      'list-bottom-left graphic-right';
+  }
+
+  .feature-keys-item {
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+  }
+  .feature-keys-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  .feature-keys-item-title {
+    font-size: 1.1rem;
+  }
+  .feature-keys-item-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
