@@ -8,4 +8,10 @@ export function initBurgerMenu() {
     burger.dataset.state = isOpen ? 'closed' : 'open';
     nav.dataset.menu = isOpen ? 'closed' : 'open';
   });
+  nav.addEventListener('click', e => {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    burger.dataset.state = 'closed';
+    nav.dataset.menu = 'closed';
+  });
 }
