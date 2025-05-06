@@ -1,11 +1,14 @@
 .feature-keys {
+  justify-content: center;
   background-color: #3c3ca6;
   padding: 60px 20px;
 }
 
 .feature-keys-title {
-  font-family: 'Bangers', cursive;
-  font-size: 2.5rem;
+  font-family: Cinzel;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.5%;
   color: #ffd700;
   text-align: center;
   margin: 0 0 40px;
@@ -13,8 +16,9 @@
 
 .feature-keys-grid {
   display: grid;
-  gap: 40px;
-
+  row-gap: 35px;
+  column-gap: 0;
+  align-items: center;
   grid-template-columns: 1fr;
   grid-template-areas:
     'graphic-left'
@@ -35,9 +39,9 @@
 .feature-keys-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 16px;
   width: 100%;
-  max-width: 480px;
+  max-width: 420px;
 }
 .feature-keys-item {
   display: flex;
@@ -45,21 +49,26 @@
   margin-bottom: 16px;
 }
 .feature-keys-icon {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
   display: none;
 }
+
 .feature-keys-item-title {
-  margin: 0 0 4px;
-  font-size: 1rem;
+  font-family: Inter;
+  margin: 0 0 7px;
+  font-size: 24px;
+  font-weight: 600;
   color: #fff;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
+
 .feature-keys-item-text {
+  font-family: Inter;
+  font-weight: 400;
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 16px;
   color: #ddd;
-  line-height: 1.4;
+  line-height: 100%;
 }
 
 .feature-keys-graphic--left {
@@ -87,10 +96,12 @@
   .feature-keys-item {
     gap: 16px;
     margin-bottom: 24px;
+    align-items: center;
   }
   .feature-keys-icon {
-    width: 32px;
-    height: 32px;
+    display: block;
+    width: 40px;
+    height: 40px;
   }
   .feature-keys-item-title {
     font-size: 1.1rem;
