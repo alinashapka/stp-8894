@@ -1,0 +1,88 @@
+/* ========== How to Play — mobile styles ========== */
+.how-to-play {
+  padding: 60px 20px;
+}
+
+.how-to-play__title {
+  font-family: 'Cinzel';
+  font-weight: 700;
+  font-size: 32px;
+  color: #ffd700;
+  text-align: center;
+  margin: 0 0 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+/* Список шагов */
+.how-to-play__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Один шаг: номер + карточка */
+.how-to-play__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* центрирует и число, и карточку */
+  gap: 12px;
+}
+
+/* Номер шага */
+.how-to-play__number {
+  font-family: Inter;
+  font-size: 18px;
+  color: #ffd700;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+/* Сама карточка */
+.how-to-play__card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: #1e1e3f;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Иконка внутри карточки */
+.how-to-play__icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  fill: #ffd700;
+}
+
+/* Контент карточки */
+.how-to-play__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Заголовок карточки */
+.how-to-play__card-title {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  color: #fff;
+}
+
+/* Описание карточки */
+.how-to-play__card-desc {
+  margin: 0;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #cccccc;
+}
