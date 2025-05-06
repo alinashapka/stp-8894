@@ -1,7 +1,7 @@
 export function popUpCookies() {
   const popUp = document.querySelector('[data-pop-up]');
   const btnAccept = document.querySelector('[data-accept]');
-  const btnDecline = document.querySelector('[pop-up-decline]');
+  const btnDecline = document.querySelector('[data-decline]');
 
   const cookiesAccepted = localStorage.getItem('cookiesAccepted');
 

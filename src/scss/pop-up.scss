@@ -18,6 +18,11 @@
   pointer-events: auto;
 }
 @include media(desktop) {
+  .cookie-pop-up {
+    padding-bottom: 60px;
+  }
+}
+@include media(desktop) {
   .cookie-pop-up-wrapper {
     display: flex;
     flex-direction: column;
