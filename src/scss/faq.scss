@@ -1,4 +1,21 @@
-.faq-container {
+@include media(desktop) {
+  .faq {
+    height: 970px;
+  }
+  .faq-bg {
+    height: 100%;
+    display: flex;
+    background-image: url(/img/background-shapes/faq-shape.png);
+    background-position: 40px 20px;
+    background-repeat: no-repeat;
+  }
+}
+@include media(desktop) {
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .faq-title {
   font-family: 'Cinzel', sans-serif;
@@ -8,6 +25,7 @@
   text-align: center;
   color: #ffd700;
   margin-bottom: 21px;
+  margin-top: 270px;
 }
 @include media(desktop) {
   .faq-title {
@@ -35,6 +53,9 @@
 @include media(desktop) {
   .ac-question {
     width: 100%;
+  }
+  .ac-item {
+    width: 900px;
   }
 }
 .ac-question-text {
