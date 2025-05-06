@@ -1,14 +1,21 @@
 @include media(desktop) {
   .faq {
-    height: 910px;
+    height: 970px;
+  }
+  .faq-bg {
+    height: 100%;
     display: flex;
     background-image: url(/img/background-shapes/faq-shape.png);
-    background-position: -50px 20px;
-    background-size: 1413px 890px;
+    background-position: 40px 20px;
     background-repeat: no-repeat;
   }
 }
-.faq-container {
+@include media(desktop) {
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .faq-title {
   font-family: 'Cinzel', sans-serif;
@@ -46,6 +53,9 @@
 @include media(desktop) {
   .ac-question {
     width: 100%;
+  }
+  .ac-item {
+    width: 900px;
   }
 }
 .ac-question-text {
