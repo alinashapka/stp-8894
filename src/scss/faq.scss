@@ -1,8 +1,14 @@
+@include media(desktop) {
+  .faq {
+    height: 910px;
+    display: flex;
+    background-image: url(/img/background-shapes/faq-shape.png);
+    background-position: -50px 20px;
+    background-size: 1413px 890px;
+    background-repeat: no-repeat;
+  }
+}
 .faq-container {
-  background-image: url(/img/background-shapes/faq-shape.png);
-  background-position: -20px -190px;
-  background-size: 1413px 888px;
-  background-repeat: no-repeat;
 }
 .faq-title {
   font-family: 'Cinzel', sans-serif;
@@ -12,6 +18,7 @@
   text-align: center;
   color: #ffd700;
   margin-bottom: 21px;
+  margin-top: 270px;
 }
 @include media(desktop) {
   .faq-title {
