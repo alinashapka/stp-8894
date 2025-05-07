@@ -25,7 +25,8 @@
   background-color: #423d9b;
   border: 1px solid #3f3f7a;
   border-radius: 10px;
-  padding: 12px;
+  margin-bottom: 32px;
+  padding: 0 20px;
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
@@ -34,11 +35,11 @@
   width: 102px;
   height: 78px;
   margin-bottom: 16px;
-  margin: 0 auto 12px;
+  margin: 37px auto 12px;
 }
 .benefit-card__title {
   font-family: Inter;
-  margin: 0 0 8px;
+  margin: 0 0 12px;
   font-size: 20px;
   color: #f1f1ff;
   font-style: normal;
@@ -53,7 +54,6 @@
   font-family: Inter;
   font-weight: 400;
   margin: 0;
-  padding: 0 18px;
   font-size: 16px;
   color: #c8c8f0;
   line-height: 19px;
@@ -87,12 +87,9 @@
     /* пусть карточки тянутся на всю колонку */
     width: 100%;
     max-width: 330px;
+    min-height: 259px;
     text-align: center;
-    padding: 24px 16px;
-  }
-
-  .benefit-card__icon {
-    margin-bottom: 16px;
+    padding: 0 16px;
   }
 
   .benefit-card__title {
@@ -105,9 +102,10 @@
 
   .benefit-card__text {
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 100%;
     font-weight: 400;
     font-size: 16px;
     align-self: stretch;
+    padding: 0 24px;
   }
 }
