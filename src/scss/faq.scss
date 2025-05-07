@@ -25,10 +25,10 @@
   text-align: center;
   color: #ffd700;
   margin-bottom: 21px;
-  margin-top: 270px;
 }
 @include media(desktop) {
   .faq-title {
+    margin-top: 270px;
     margin-bottom: 64px;
   }
 }

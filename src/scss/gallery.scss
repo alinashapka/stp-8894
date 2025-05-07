@@ -1,0 +1,82 @@
+@include media(desktop) {
+  .gallery {
+    height: 958px;
+  }
+  .gallery-bg {
+    height: 100%;
+    display: flex;
+    background-image: url(/img/background-shapes/gallery-shape.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.gallery-container {
+  padding: 0;
+  padding-bottom: 40px;
+}
+@include media(desktop) {
+  .gallery-container {
+    padding: 0 32px;
+    padding-bottom: 42px;
+  }
+}
+.gallery-title {
+  display: none;
+}
+@include media(desktop) {
+  .gallery-title {
+    display: block;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #ffd700;
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+}
+.gallery-list {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+@include media(desktop) {
+  .gallery-list {
+    gap: 18px;
+  }
+}
+.gallery-item {
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+.gallery-img {
+  width: 270px;
+  height: 388px;
+}
+.gallery-item-title {
+  display: none;
+}
+@include media(desktop) {
+  .gallery-item-title {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 27px;
+    margin-bottom: 8px;
+  }
+}
+.gallery-item-text {
+  display: none;
+}
+@include media(desktop) {
+  .gallery-item-text {
+    display: block;
+    width: 270px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: #c8c8f0;
+  }
+}
