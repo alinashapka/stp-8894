@@ -1,7 +1,8 @@
 .feature-keys {
   justify-content: center;
   background-color: #3c3ca6;
-  padding: 60px 20px;
+  padding: 0 20px;
+  padding-bottom: 40px;
 }
 
 .feature-keys-title {
@@ -39,14 +40,15 @@
 .feature-keys-list {
   list-style: none;
   margin: 0;
-  padding: 0 16px;
   width: 100%;
   max-width: 420px;
 }
 .feature-keys-item {
   display: flex;
   gap: 12px;
-  margin-bottom: 16px;
+}
+.feature-keys-item:not(:last-child) {
+  margin-bottom: 43px;
 }
 .feature-keys-icon {
   display: none;
@@ -102,7 +104,6 @@
     opacity: 0.15;
     z-index: 1;
     pointer-events: none;
-  }
   .feature-keys-grid {
     grid-template-columns: 480px 1fr;
     grid-template-rows: auto 1fr;
@@ -122,6 +123,7 @@
     display: block;
     width: 40px;
     height: 40px;
+    margin-right: 10px;
   }
   .feature-keys-item-title {
     font-size: 1.1rem;
