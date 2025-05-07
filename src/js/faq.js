@@ -11,16 +11,15 @@ export function AccordionInIt() {
       const panel = trigger.lastElementChild;
       const questionText = trigger.querySelector('[data-text]');
       const icon = trigger.querySelector('[data-icon]');
-      const button = trigger.querySelector('[data-button]');
 
       if (panel.style.display === 'block') {
         panel.style.display = 'none';
         questionText.classList.remove('active');
-        icon.setAttribute('href', '/img/sprite.svg#icon-plus');
+        icon.setAttribute('href', './img/sprite.svg#icon-plus');
       } else {
         panel.style.display = 'block';
         questionText.classList.add('active');
-        icon.setAttribute('href', '/img/sprite.svg#icon-minus');
+        icon.setAttribute('href', './img/sprite.svg#icon-minus');
       }
     });
   });
