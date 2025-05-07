@@ -20,11 +20,11 @@ body {
   background: linear-gradient(0deg, #202060 0%, #303070 100%);
   max-width: none;
   max-width: 1200px;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 .logo {
-  height: 64px;
+  height: 80px;
   width: auto;
 }
 
@@ -85,7 +85,7 @@ body {
 
   .nav {
     position: fixed;
-    top: 64px; /* от самого верха viewport */
+    top: 80px; /* от самого верха viewport */
     left: 0;
     width: 100%; /* на всю ширину экрана */
     height: calc(100vh - 64px); /* на всю высоту экрана */
