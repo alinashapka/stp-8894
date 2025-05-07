@@ -73,7 +73,6 @@
 
 .feature-keys-graphic--left {
   grid-area: graphic-left;
-  justify-self: end;
 }
 .feature-keys-list--top-right {
   grid-area: list-top-right;
@@ -110,5 +109,8 @@
   .feature-keys-item-text {
     font-size: 0.9rem;
     line-height: 1.4;
+  }
+  .feature-keys-graphic--left {
+    justify-self: end;
   }
 }
