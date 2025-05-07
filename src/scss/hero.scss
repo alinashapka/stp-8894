@@ -95,6 +95,9 @@
 /* 3) Десктоп ≥1200px — две колонки и кнопка  */
 /* ----------------------------------------- */
 @media (min-width: 1200px) {
+  .hero {
+    position: relative;
+  }
   .hero::before {
     content: '';
     position: absolute;
@@ -103,8 +106,8 @@
     bottom: 0;
     left: 0;
 
-    background: url('/img/hero/bg-hero.png') no-repeat 100% -170px;
-    background-size: 45% 60%;
+    background: url('/img/hero/bg-hero.png') no-repeat 133% -220px;
+    background-size: 55% 148%;
 
     opacity: 0.15;
     z-index: 1;
