@@ -1,9 +1,4 @@
 /* ========== How to Play ========== */
-
-.how-to-play {
-  padding: 60px 20px;
-}
-
 .how-to-play__title {
   font-family: 'Cinzel';
   font-weight: 700;
@@ -79,6 +74,12 @@
 
 /* ========== Desktop ≥1200px ========== */
 @media (min-width: 1200px) {
+  .how-to-play {
+    padding: 60px 20px 220px;
+    background: url('/img/how-to-play/Line-1.png') no-repeat 50% 100px,
+      url('/img/how-to-play/Vector-5.png') no-repeat top center;
+    background-size: 5% 85%, 100% 100%;
+  }
   .how-to-play__steps {
     max-width: 1200px;
     margin: 0 auto;
@@ -133,8 +134,15 @@
     width: 96px;
     height: 96px;
   }
+  .how-to-play__title {
+    margin-bottom: 87px;
+  }
   .how-to-play__card-title {
     font-size: 24px;
     line-height: 29px;
+  }
+  .how-to-play__card-content {
+    padding-left: 38px;
+    padding-right: 16px;
   }
 }
