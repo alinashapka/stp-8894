@@ -61,31 +61,32 @@
 }
 
 /* Кнопка */
-.download-btn {
+.download-btn-hero {
   grid-area: button;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 24px;
   background-color: #ffd700;
   border: none;
-  border-radius: 12px;
   font-size: 1rem;
-  width: 208px;
   height: 65px;
   cursor: pointer;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: black;
+  border-radius: 4px;
+  padding: 20px 12px;
+  width: 280px;
+  justify-content: center;
+  gap: 10px;
 }
-.download-btn:hover {
+.download-btn-hero:hover {
   background-color: #ffca00;
 }
-.download-btn:focus {
+.download-btn-hero:focus {
   background-color: #e6b800;
 }
-.download-btn img {
+.download-btn-hero img {
   width: 24px;
   height: 24px;
 }
@@ -102,17 +103,17 @@
       'image  button';
     column-gap: 24px;
     row-gap: 0;
-    justify-items: start; /* по умолчанию слева */
+    justify-items: start;
   }
 
   .hero-title {
     font-size: 48px;
     white-space: nowrap;
-    letter-spacing: -0.03em; /* чуть ближе друг к другу */
-    word-spacing: -0.2em; /* чуть ужимает пробелы */
+    letter-spacing: -0.03em;
+    word-spacing: -0.2em;
     text-align: right;
     margin-left: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .hero-container > img {
@@ -123,7 +124,11 @@
     text-align: left;
     margin-bottom: 0;
   }
-  .download-btn {
+  .download-btn-hero {
+    position: relative;
+    top: -85px;
     justify-self: center;
+    width: 208px;
+    border-radius: 12px;
   }
 }

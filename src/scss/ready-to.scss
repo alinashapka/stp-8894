@@ -79,13 +79,33 @@
   }
 }
 .download-btn {
+  grid-area: button;
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffd700;
+  border: none;
+  font-size: 1rem;
+  height: 65px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: black;
   border-radius: 4px;
   padding: 20px 12px;
   width: 280px;
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
+}
+.download-btn:hover {
+  background-color: #ffca00;
+}
+.download-btn:focus {
+  background-color: #e6b800;
+}
+.download-btn img {
+  width: 24px;
+  height: 24px;
 }
 .download-btn-text {
   font-family: var(--font-family);
@@ -94,6 +114,7 @@
 @include media(desktop) {
   .download-btn {
     width: 208px;
+    border-radius: 12px;
   }
   .download-btn.ready-to {
     margin-bottom: 157px;
