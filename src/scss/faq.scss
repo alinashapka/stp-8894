@@ -5,9 +5,8 @@
   .faq-bg {
     height: 100%;
     display: flex;
-    background-image: url(/img/background-shapes/faq-shape.png);
-    background-position: 40px 20px;
-    background-repeat: no-repeat;
+    background: url('/img/background-shapes/faq-shape.png') no-repeat center
+      20px;
   }
 }
 @include media(desktop) {
