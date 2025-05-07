@@ -96,6 +96,24 @@
 /* 3) Десктоп ≥1200px — две колонки и кнопка  */
 /* ----------------------------------------- */
 @media (min-width: 1200px) {
+  .hero {
+    position: relative;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: url('/img/hero/bg-hero.png') no-repeat 133% -220px;
+    background-size: 55% 148%;
+
+    opacity: 0.15;
+    z-index: 1;
+    pointer-events: none;
+  }
   .hero-container {
     grid-template-columns: 480px 1fr;
     grid-template-areas:
