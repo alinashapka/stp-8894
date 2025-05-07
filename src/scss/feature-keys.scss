@@ -73,6 +73,7 @@
 
 .feature-keys-graphic--left {
   grid-area: graphic-left;
+  justify-self: end;
 }
 .feature-keys-list--top-right {
   grid-area: list-top-right;
