@@ -81,10 +81,14 @@
   padding: 0;
   margin-left: auto;
   align-self: center;
-}
-.ac-icon {
-  width: 25px;
+  width: 24px;
   height: 24px;
+}
+.ac-icon-plus {
+  display: inline;
+}
+.ac-icon-minus {
+  display: none;
 }
 .ac-panel {
   display: none;
