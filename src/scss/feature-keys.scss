@@ -85,12 +85,32 @@
 }
 
 @media (min-width: 1200px) {
+  .feature-keys {
+    position: relative;
+  }
+  .feature-keys::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: url('/img/hero/bg-hero.png') no-repeat 97% 540px;
+    background-size: 40% 63%;
+
+    opacity: 0.15;
+    z-index: 1;
+    pointer-events: none;
+  }
   .feature-keys-grid {
     grid-template-columns: 480px 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
       'graphic-left list-top-right'
       'list-bottom-left graphic-right';
+    position: relative;
+    z-index: 2;
   }
 
   .feature-keys-item {
