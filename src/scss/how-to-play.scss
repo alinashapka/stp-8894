@@ -75,10 +75,8 @@
 /* ========== Desktop ≥1200px ========== */
 @media (min-width: 1200px) {
   .how-to-play {
-    padding: 60px 20px 220px;
-    background: url('/img/how-to-play/Line-1.png') no-repeat 50% 100px,
-      url('/img/how-to-play/Vector-5.png') no-repeat top center;
-    background-size: 5% 85%, 100% 100%;
+    background: url('/img/how-to-play/Line-1.png') no-repeat 50% 100px;
+    background-size: 5% 85%;
   }
   .how-to-play__steps {
     max-width: 1200px;
