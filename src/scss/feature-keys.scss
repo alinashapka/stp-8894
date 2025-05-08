@@ -3,6 +3,8 @@
   justify-content: center;
   background-color: #3c3ca6;
   padding: 0 20px;
+  margin: 42px auto 0;
+  max-width: 1200px;
   padding-bottom: 40px;
 }
 
@@ -95,6 +97,7 @@
     padding-top: 60px;
     position: relative;
   }
+
   .feature-keys::before {
     content: '';
     position: absolute;
