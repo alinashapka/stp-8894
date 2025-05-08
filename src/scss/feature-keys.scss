@@ -93,6 +93,11 @@
 }
 
 @media (min-width: 1200px) {
+  .feature-keys {
+    padding-top: 60px;
+    position: relative;
+  }
+
   .feature-keys::before {
     content: '';
     position: absolute;
