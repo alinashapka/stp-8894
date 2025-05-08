@@ -2,7 +2,7 @@
 /* 1) Фон и паддинги самой секции Hero        */
 /* ----------------------------------------- */
 .hero {
-  padding-top: 64px;
+  padding-top: 24px;
   min-width: 320px;
   max-width: 1200px;
   margin: 0 auto;
@@ -25,7 +25,7 @@
 
 /* Заголовок — занимает всю ширину */
 .hero-title {
-  font-family: "Baloo 2", sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   grid-area: title;
   margin: 0;
   margin-bottom: 25px;
@@ -97,6 +97,7 @@
 /* ----------------------------------------- */
 @media (min-width: 1200px) {
   .hero {
+    padding-top: 60px;
     position: relative;
   }
   .hero::before {

@@ -20,12 +20,19 @@ body {
   background: linear-gradient(0deg, #202060 0%, #303070 100%);
   max-width: none;
   max-width: 1200px;
-  padding: 0 20px 0 0;
+  padding: 0 20px;
 }
 
 .logo {
-  height: 80px;
-  width: auto;
+  height: 40px;
+  margin-left: -16px;
+}
+
+@include media(desktop) {
+  .logo {
+    height: 80px;
+    margin-left: -20px;
+  }
 }
 
 .nav {
@@ -58,6 +65,7 @@ body {
   border: none;
   cursor: pointer;
   z-index: 1001;
+  padding: 0;
 }
 
 .burger-icon {
@@ -73,6 +81,8 @@ body {
 
 .burger[data-state='open'] .burger-close {
   display: block;
+  width: 12px;
+  height: 12px;
 }
 
 /* MOBILE NAVIGATION (≤1199px) */
@@ -85,11 +95,11 @@ body {
 
   .nav {
     position: fixed;
-    top: 80px; /* от самого верха viewport */
+    top: 40px; /* от самого верха viewport */
     left: 0;
     width: 100%; /* на всю ширину экрана */
-    height: calc(100vh - 64px); /* на всю высоту экрана */
-    background: #25257a;
+    height: calc(100vh - 24px); /* на всю высоту экрана */
+    background: #3c3ca6;
     padding: 20px 0; /* если нужно отодвинуть содержимое вниз под шапку */
     z-index: 999;
     overflow-y: auto; /* если пунктов много — позволяем скролл */
@@ -104,6 +114,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 0 20px;
+    padding-top: 20px;
     margin: 0;
     gap: 20px;
   }
