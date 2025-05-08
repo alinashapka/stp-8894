@@ -1,4 +1,9 @@
 @include media(desktop) {
+  .about {
+    padding: 194px 20px 220px;
+    background: url('/img/about/Vector 4.png') no-repeat top center;
+    background-size: 100% 100%;
+  }
   .about-container {
     display: flex;
     justify-content: space-between;
