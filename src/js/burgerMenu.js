@@ -24,7 +24,7 @@ export function initBurgerMenu() {
       const target = document.getElementById(targetId);
 
       if (target) {
-        const headerOffset = window.innerWidth >= 1200 ? 80 : 40;
+        const headerOffset = window.innerWidth >= 1200 ? 86 : 40;
         const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
