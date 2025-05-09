@@ -2,7 +2,7 @@
   position: relative;
   justify-content: center;
   background-color: #3c3ca6;
-  padding: 0 20px;
+  // padding: 0 20px;
   margin: 0 auto;
   max-width: 1200px;
   padding-bottom: 20px;
@@ -42,7 +42,8 @@
 
 .feature-keys-list {
   list-style: none;
-  margin: 0;
+  // margin: 0;
+  margin-left: 32px;
   width: 100%;
   max-width: 420px;
 }
@@ -71,6 +72,7 @@
 }
 
 .feature-keys-item-text {
+  max-width: 248px;
   font-family: Inter;
   font-weight: 400;
   margin: 0;
@@ -120,11 +122,16 @@
       'graphic-left list-top-right'
       'list-bottom-left graphic-right';
   }
-
+  .feature-keys-list {
+    margin: 0;
+  }
   .feature-keys-item {
     gap: 16px;
     margin-bottom: 24px;
     align-items: center;
+  }
+  .feature-keys-item-text {
+    max-width: 420px;
   }
   .feature-keys-icon {
     display: block;
