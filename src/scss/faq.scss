@@ -19,7 +19,7 @@
 .faq-title {
   font-family: 'Cinzel', sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 1.1;
   text-align: center;
   color: #ffd700;
@@ -27,6 +27,7 @@
 }
 @include media(desktop) {
   .faq-title {
+font-size: 42px;
     margin-top: 270px;
     margin-bottom: 64px;
   }
