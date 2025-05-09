@@ -9,7 +9,6 @@
     align-items: flex-start;
   }
   .reviews-bg {
-    padding-top: 6px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -40,6 +39,7 @@
 }
 @include media(desktop) {
   .reviews-title {
+    padding-top: 6px;
     margin: 0 auto;
     margin-bottom: 46px;
   }
